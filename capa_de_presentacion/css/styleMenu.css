@@ -1,0 +1,84 @@
+/* ===== MENÚ PRINCIPAL SENCILLO ===== */
+#nav {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #3b4da3;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 4px;
+}
+
+/* Items principales */
+#nav li {
+    display: inline-block;
+    margin-right: 15px;
+    list-style: none;
+    position: relative;
+}
+
+/* Links principales */
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+/* Hover en nivel principal */
+#nav li:hover > a {
+    background-color: #5362a7;
+}
+
+/* ===== SUBMENÚ ===== */
+#nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mostrar al hover */
+#nav li:hover > ul {
+    display: block;
+}
+
+/* Items del submenú */
+#nav ul li {
+    display: block;
+}
+
+/* Links del submenú */
+#nav ul a {
+    color: #333;
+    padding: 8px 12px;
+    display: block;
+    font-weight: normal;
+}
+
+/* Hover submenú */
+#nav ul a:hover {
+    background-color: #3b4da3;
+    color: #fff;
+}
+
+/* ===== RESPONSIVE SENCILLO ===== */
+@media (max-width: 600px) {
+    #nav {
+        text-align: center;
+    }
+    #nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    #nav ul {
+        position: relative;
+        border: none;
+    }
+}

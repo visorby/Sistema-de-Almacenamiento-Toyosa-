@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../Fondos/Fondo02.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Contenedor principal */
+#contenedor {
+    margin: 8px auto;
+    width: 100%;
+    max-width: 1500px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #004080, #0073e6);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    border-bottom: 5px solid #fd6d22;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Sección central */
+section {
+    background: #ffffff;
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background: #fd6d22;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 30px;
+    border-top: 3px solid #cc5200;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+    background: #0073e6;
+    color: #fff;
+}
+
+thead td {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Botones generales */
+button, .btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    margin: 2px;
+}
+
+/* Botón principal */
+.btn-primary {
+    background: #0073e6;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Botón habilitar */
+.btn-habilitar {
+    background-color: #28a745;
+    color: #fff;
+}
+.btn-habilitar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Botón deshabilitar */
+.btn-deshabilitar {
+    background-color: #dc3545;
+    color: #fff;
+}
+.btn-deshabilitar:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Estado */
+.estado-activo {
+    color: green;
+    font-weight: bold;
+}
+.estado-inactivo {
+    color: red;
+    font-weight: bold;
+}
